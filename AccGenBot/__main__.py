@@ -11,13 +11,26 @@ See < https://github.com/TgxBotz/AccGenBot/blob/master/LICENSE >
 for the license.
 """
 
-import os
+
+import glob
+from pathlib import Path
+from AccGenBot.utils import load_plugins
 import logging
-from telethon import TelegramClient
-from Configs import Config
+from AccGenBot import AccGen
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.INFO)
 
-bot = TelegramClient('AccGen', api_id=Config.API_ID, api_hash=Config.API_HASH)
-AccGen = bot.start(bot_token=Config.TOKEN)
+path = "AccGenBot/plugins/*.py"
+files = glob.glob(path)
+for name in files:
+    with open(name) as a:
+        patt = Path(a.name)
+        plugin_name = patt.stem
+        load_plugins(plugin_name.replace(".py", ""))
+
+print("Successfully Started AccGenBot!")
+print("Visit @TgxBots")
+
+if __name__ == "__main__":
+    AccGen.run_until_disconnected()
