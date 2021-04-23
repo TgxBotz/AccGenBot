@@ -1,0 +1,51 @@
+{
+    "name": "AccGenBot Source",
+    "description": "A Multi AccGenBot Source Code written on Python.",
+    "logo": "https://telegra.ph/file/6445aa2c56d0b07025f76.jpg",
+    "keywords": [
+        "Account",
+        "Generator",
+        "telegram",
+        "bots"
+    ],
+    "website": "https://t.me/TgXBots",
+    "repository": "https://github.com/tgxbotz/AccGenBot",
+    "success_url": "https://telegram.dog/TgXBots",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org",
+            "value": ""
+        },
+        "TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "CHANNEL_US": {
+            "description": "Your Channel Username, with the @",
+            "value": ""
+        },
+        "CHANNEL_URL": {
+            "description": "Your Channel URL",
+            "value": ""
+        },
+        "LOGS_CHAT": {
+            "description": "A Group/Channel To Store Your Logs, Give the ID",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
