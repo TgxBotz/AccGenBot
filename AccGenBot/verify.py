@@ -1,3 +1,8 @@
+"""
+This function is made by Midhun
+© Devsexpo
+"""
+
 from telethon import Button, custom, events, functions
 import telethon
 
