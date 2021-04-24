@@ -1,1 +1,1 @@
-AccGen: python -m AccGenBot
+worker: python -m AccGenBot
