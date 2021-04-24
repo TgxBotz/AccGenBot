@@ -11,11 +11,13 @@ async def start(event):
        await event.reply("**Join my channel to use me:)**", buttons=[
        [Button.url("Join Channel", "{}".format(Config.CHANNEL_URL))]
        ])
+       return
 
     if event.is_group:
        await event.reply("**Sorry, I Work in PM only.**\n__I am leaving this chat...__")
        await AccGen.delete_dialog(event.chat_id)
        return
+
     START_TEXT = """
 **Heya {}**
 Welcome to AccGen from here you can generate
