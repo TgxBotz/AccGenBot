@@ -7,9 +7,11 @@ from Configs import Config
 async def gen(gen):
      check = await verify(Config.CHANNEL_US, gen, AccGen)
      if check is False:
-       await event.reply("**Join my channel to use me:)**", buttons=[
+       await gen.reply("**Join my channel to use me:)**", buttons=[
        [Button.url("Join Channel", "{}".format(Config.CHANNEL_URL))]
        ])
+       return
+
      TEXT = """
 **Heya {}**
 Choose the account you wanna generate.
