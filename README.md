@@ -5,8 +5,8 @@
 ## Additional Information
 ![Python Version](https://img.shields.io/badge/python-3.9.1-green?style=for-the-badge&logo=appveyor)
 ![Telethon Version](https://img.shields.io/badge/telethon-1.21.1-blue?style=for-the-badge&logo=appveyor)
-[![Forks](https://img.shields.io/github/forks/TgxBotz/AccGenBot?style=for-the-badge&logo=appveyor)](https://GitHub.com/TgxBotz/AccGenBot/stargazers)
-[![Stars](https://img.shields.io/github/stars/TgxBotz/AccGenBot?style=for-the-badge&logo=appveyor)](https://GitHub.com/TgxBotz/AccGenBot/fork)
+[![Forks](https://img.shields.io/github/forks/TgxBotz/AccGenBot?style=for-the-badge&logo=appveyor)](https://GitHub.com/TgxBotz/AccGenBot/fork)
+[![Stars](https://img.shields.io/github/stars/TgxBotz/AccGenBot?style=for-the-badge&logo=appveyor)](https://GitHub.com/TgxBotz/AccGenBot/stargazers)
 ![LICENSE](https://img.shields.io/github/license/TgxBotz/AccGenBot?style=for-the-badge&logo=appveyor)
 [![Repository Size](https://img.shields.io/github/repo-size/TgxBotz/AccGenBot?style=for-the-badge&logo=appveyor)](https://GitHub.com/TgxBotz/AccGenBot)
 
